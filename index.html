@@ -1,44 +1,247 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Deluxe Detailing 281</title>
-  <style>
-    body {
-      background: black;
-      color: white;
-      font-family: Arial;
-      text-align: center;
-      padding: 50px;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deluxe Detailing 281</title>
 
-    h1 {
-      color: gold;
-      font-size: 50px;
-    }
+<style>
 
-    p {
-      font-size: 22px;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
 
-    .button {
-      background: gold;
-      color: black;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-    }
-  </style>
+body{
+background:black;
+color:white;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.logo{
+width:320px;
+max-width:90%;
+margin-bottom:20px;
+border-radius:20px;
+box-shadow:0 0 25px #0066ff;
+}
+
+h1{
+font-size:65px;
+color:#ffffff;
+text-shadow:0 0 15px #0066ff;
+margin-bottom:15px;
+}
+
+.tagline{
+font-size:28px;
+color:#cccccc;
+margin-bottom:30px;
+}
+
+.phone{
+font-size:40px;
+font-weight:bold;
+color:#00a2ff;
+margin-bottom:25px;
+}
+
+.button{
+display:inline-block;
+padding:18px 40px;
+background:#0066ff;
+color:white;
+text-decoration:none;
+font-size:22px;
+border-radius:12px;
+font-weight:bold;
+transition:.3s;
+box-shadow:0 0 15px #0066ff;
+}
+
+.button:hover{
+background:white;
+color:black;
+}
+
+.section{
+padding:80px 20px;
+text-align:center;
+}
+
+.section h2{
+font-size:42px;
+margin-bottom:40px;
+color:#00a2ff;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:18px;
+border:1px solid #222;
+box-shadow:0 0 15px rgba(0,102,255,.3);
+}
+
+.card h3{
+font-size:30px;
+margin-bottom:15px;
+color:white;
+}
+
+.price{
+font-size:38px;
+color:#00a2ff;
+font-weight:bold;
+margin-top:15px;
+}
+
+.services{
+max-width:1000px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.service{
+background:#111;
+padding:25px;
+border-radius:15px;
+font-size:22px;
+border-left:5px solid #0066ff;
+}
+
+.footer{
+padding:40px 20px;
+background:#050505;
+text-align:center;
+font-size:20px;
+border-top:1px solid #222;
+}
+
+.footer h3{
+font-size:38px;
+margin-bottom:15px;
+color:#00a2ff;
+}
+
+</style>
 </head>
 
 <body>
-  <h1>Deluxe Detailing 281</h1>
-  <p>Premium mobile auto detailing services.</p>
 
-  <br><br>
+<section class="hero">
 
-  <a class="button" href="tel:+18325551234">
-    Call Now
-  </a>
+<div class="hero-content">
+
+<img src="https://i.imgur.com/yOURLOGO.png" class="logo">
+
+<h1>DELUXE DETAILING 281</h1>
+
+<p class="tagline">
+It’s Not Just A Wash,<br>
+It’s A Deluxe Experience.
+</p>
+
+<div class="phone">
+346-917-9020
+</div>
+
+<a class="button" href="tel:13469179020">
+CALL NOW
+</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Basic Wash Packages</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Cars</h3>
+<p>Exterior wash, tire shine, interior wipe down & vacuum.</p>
+<div class="price">$65 - $85</div>
+</div>
+
+<div class="card">
+<h3>Trucks & SUVs</h3>
+<p>Full premium wash package for larger vehicles.</p>
+<div class="price">$85 - $120</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Services We Offer</h2>
+
+<div class="services">
+
+<div class="service">Buffing & Polishing</div>
+<div class="service">Clay Bar Treatment</div>
+<div class="service">Ceramic Coating</div>
+<div class="service">Paint Correction</div>
+<div class="service">Interior Detailing</div>
+<div class="service">Exterior Detailing</div>
+<div class="service">Headlight Restoration</div>
+<div class="service">Engine Bay Cleaning</div>
+
+</div>
+
+</section>
+
+<section class="footer">
+
+<h3>Book Today!</h3>
+
+<p>Professional • Reliable • Mobile</p>
+
+<br>
+
+<p>We Come To You</p>
+
+<br>
+
+<div class="phone">
+346-917-9020
+</div>
+
+</section>
+
 </body>
 </html>
